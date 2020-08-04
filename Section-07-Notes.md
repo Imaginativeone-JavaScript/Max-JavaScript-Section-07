@@ -74,4 +74,29 @@ console.dir(window); // Both log and dir print the same thing, the Object Proper
 
 ## 149
 
+- querySelector() // gets single elements
+- getElementById() // gets single elements
+- Different ways of querying elements(by CSS selector, by ID)
+
+- querySelectorAll() // gets collections elements (NodeList)
+  - a "non-live" NodeList, that is, a "snapshot" of the currently rendered DOM
+- getElementsByTagName()
+
+- Nodes and Elements (There's a Difference)
+
+  - Nodes
+
+    - The objects that make up the DOM
+    - HTML tags are "element nodes" (or just "elements")
+    - Text creates "text nodes"
+    - Attributes create "attribute nodes"
+
+  - Elements
+
+    - One type of node
+    - Special properties and methods to interact with the elements
+    - Available methods and properties depend on the kind of element
+    - Can be selected in various different ways (via JavaScript)
+    - Can be created and removed via JavaScript
+
 ## 150
