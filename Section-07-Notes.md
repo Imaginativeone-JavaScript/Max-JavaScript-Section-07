@@ -43,6 +43,12 @@ console.dir(window); // Both log and dir print the same thing, the Object Proper
 
 ## 148
 
+- The Document Object Model (DOM)
+
+```html
+<html></html>
+```
+
 ## 149
 
 ## 150
