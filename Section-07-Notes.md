@@ -41,7 +41,7 @@ console.log(window); // All the core APIs that the Browser wants to expose to me
 console.dir(window); // Both log and dir print the same thing, the Object Property tree
 ```
 
-## 148
+## 148 Understanding the DOM and how it's created
 
 - The Document Object Model (DOM)
 
@@ -72,7 +72,7 @@ console.dir(window); // Both log and dir print the same thing, the Object Proper
 - console.dir(\$0); // You get the properties for the specific element
   - Even for an h1 tag, there are MANY properties
 
-## 149
+## 149 Nodes & Elements - Querying the DOM Overview
 
 - querySelector() // gets single elements
 - getElementById() // gets single elements
@@ -99,7 +99,7 @@ console.dir(window); // Both log and dir print the same thing, the Object Proper
     - Can be selected in various different ways (via JavaScript)
     - Can be created and removed via JavaScript
 
-## 150
+## 150 Selecting Elements in the DOM
 
 Chrome Browser Tools:
 
@@ -122,9 +122,51 @@ document.querySelector("ul li:last-of-type"); // returns last matching item of N
 
 These selections can be made without a page reload.
 
-## 151
+## 151 Summary: Node Query Methods
 
-## 152
+## 152 Exploring and Changing DOM Properties
+
+- Evaluating and Manipulating Elements
+
+```javascript
+<p id="welcome-text" class="text-default">
+	Welcome!
+</p>;
+
+document.getElementById("welcome-text");
+
+const p = document.getElementById("welcome-text");
+
+p.textContent; // "Welcome!";
+p.id; // "welcome-text";
+p.className; // "text-default";
+
+// Assign a new value to the className
+p.className = "new-class"; // <p...class="new-class">
+```
+
+Back to the Browser Tools:
+
+```javascript
+const h1 = document.querySelector("h1");
+
+// <header><h1 id="main-title">Dive Into the DOM!</h1></header>
+
+h1.textContent; // "Dive Into the DOM!
+h1.className; // "" No class is designated
+
+// Assign some new text
+h1.textContent = "Some new text!"; // "Some new text!"; appears as the new h1 text in the Browser
+
+// Assign a new CSS class
+h1.className = "title";
+
+// Browser Tools > Elements
+// <header><h1 id="main-title" class="title">Dive Into the DOM!</h1></header>
+
+h1.style.color = "white";
+h1.style.backgroundColor = "red"; // "background-color" probably doesn't work; check console.dir() & MDN
+```
 
 ## 153
 
