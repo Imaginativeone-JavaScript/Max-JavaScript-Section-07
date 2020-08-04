@@ -104,5 +104,40 @@ console.dir(window); // Both log and dir print the same thing, the Object Proper
 Chrome Browser Tools:
 
 ```javascript
-document.getElementById("main-title");
+document.getElementById("main-title"); // prints the selected element node
+
+console.log(document.getElementById("main-title")); // shows the property list
 ```
+
+```javascript
+document.getElementsByClassName("list-item"); // returns HTMLCollection(number of elements in the collection)
+// for-of loops work here
+
+document.querySelector(".list-item"); // returns first matching item of NodeList
+document.querySelectorAll(".list-item"); // returns entire NodeList(number of elements in the collection)
+
+document.querySelector("ul li:first-of-type"); // returns first matching item of NodeList
+document.querySelector("ul li:last-of-type"); // returns last matching item of NodeList
+```
+
+These selections can be made without a page reload.
+
+## 151
+
+## 152
+
+## 153
+
+## 154
+
+## 155
+
+## 156
+
+## 157
+
+## 158
+
+## 159
+
+## 160
