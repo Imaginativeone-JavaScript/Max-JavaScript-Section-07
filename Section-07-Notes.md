@@ -185,11 +185,36 @@ input.setAttribute('value', 'some other default text'); // no UI change, but att
 input.value = input.getAttribute('value'); // makes the change
 ```
 
-## 154
+## 154 Selecting Multiple Elements & Summary
 
-## 155
+```javascript
+const allLis = document.querySelectorAll("li"); // non-live list, snapshot
 
-## 156
+// If I wanted to work with a particular one, I'd have to access the index
+
+const allLis = document.getElementsByTagName("li"); // live list
+```
+
+## 155 Traversing the DOM
+
+- Children, Descendants, Parents, Ancestors
+
+  - Child, DIRECT child node or element
+  - Descendant, direct or indirect child node or element
+  - Parent, direct relationship
+  - Ancestor, direct or indirect relationship
+
+```javascript
+// document.body >> parentNode, parentElement, closest()
+
+// previousSibling, previousElementSibling Current Node nextSibling, nextElementSibling
+// <div>
+
+// childNodes, children, querySelector()
+// firstChild, firstElementChild, lastChild, lastElementChild
+```
+
+## 156 Traversing Child Nodes
 
 ## 157
 
