@@ -31,4 +31,18 @@ const titleEl = document.querySelector("h1"); // select the first h1 HTML Elemen
 
 ## 147 Document and Window Object
 
-##
+```javascript
+console.log(document); // prints html elements
+console.dir(document); // prints DOM Object Property tree
+
+document.element; // HTML element tree
+
+console.log(window); // All the core APIs that the Browser wants to expose to me
+console.dir(window); // Both log and dir print the same thing, the Object Property tree
+```
+
+## 148
+
+## 149
+
+## 150
