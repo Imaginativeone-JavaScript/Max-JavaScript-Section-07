@@ -61,6 +61,17 @@ console.dir(window); // Both log and dir print the same thing, the Object Proper
 </html>
 ```
 
+- The browser renders the pixels AND
+- Stores these tags as an Object in memory
+- html element NODES
+- A Tree of Nodes, parents and children
+- Text Nodes, including whitespace and line breaks
+- Element Nodes are different than text nodes
+- Chrome tools Elements Tab
+- == \$0
+- console.dir(\$0); // You get the properties for the specific element
+  - Even for an h1 tag, there are MANY properties
+
 ## 149
 
 ## 150
