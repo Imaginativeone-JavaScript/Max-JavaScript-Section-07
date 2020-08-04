@@ -216,6 +216,15 @@ const allLis = document.getElementsByTagName("li"); // live list
 
 ## 156 Traversing Child Nodes
 
+```javascript
+const ul = document.querySelector("ul");
+
+ul.children[1]; // gets the 2nd child ELEMENT node, textNodes are excluded
+
+ul.childNodes; // there are a bunch of textNodes in there
+// "data" (property) on a textNode, sets the text of the textNode
+```
+
 ## 157
 
 ## 158
