@@ -227,8 +227,108 @@ ul.childNodes; // there are a bunch of textNodes in there
 
 ## 157
 
+```javascript
+const liFirst = document.querySelector("li");
+
+liFirst.parentElement; // Almost the same
+liFirst.parentNode;
+
+// Why do we have both?
+document.documentElement.parentElement; // null
+document.documentElement.parentNode; // #document
+
+liFirst.closest("body"); // Closest ancestor
+```
+
 ## 158
 
-## 159
+```javascript
+const ul = li.parentElement;
+
+ul.previousElementSibling; // previousSibling looks at ALL the nodes
+
+ul.nextElementSibling;
+```
+
+## 159 DOM Traversal vs Query Methods
 
 ## 160
+
+- Styles assigned to the style property override other styles (set by class, etc)
+- Via style Property
+- Via className
+- Via classList
+  - Object with built-in methods
+
+```javascript
+section.classList.toggle("visible");
+section.classList.toggle("invisible");
+```
+
+## 161 Creating and Inserting Elements
+
+- With innerHTML, the old html gets wiped
+- I could append new data
+- "Flashing changes" Re-rendered
+- insertAdjacentHTML()
+  - downside: No direct access to the newly-rendered content
+  - eventListeners are not available
+- document.createElement('li'); // tagName argument
+- list.appendChild(newLi);
+
+## 162 Adding Elements via HTML in Code
+
+- list.append(newLi);
+- list.append(newNode1, newNodeN...);
+
+- list.prepend(newLi);
+- list.prepend(newNode1, newNodeN...);
+
+## 163 Adding Elements via createElement()
+
+## 164 Inserting DOM Elements
+
+- list.lastElementChild.before(newLi); // insert the element to a specific spot
+- list.lastElementChild.after(newLi); // insert the element to a specific spot
+- list.lastElementChild.replace(newLi); // replace the element
+
+- list.insertAdjacentElement('afterend', newLi); // insert the element to a specific spot
+
+## 165 Cloning DOM Nodes
+
+- newLi.cloneNode(); // false > no children cloned, true > all children cloned
+
+## 166 Live Node Lists vs Static Node Lists
+
+- NodeList(s) // non-live
+  - The reference values DO change dynamically, just not the collection
+- HTMLCollection // live
+  - Possible higher memory consumption
+
+## 167 Removing Elements
+
+## 168
+
+## 169
+
+## 170
+
+## 171
+
+## 172
+
+## 173
+
+## 174
+
+## 175
+
+## 176
+
+## 177
+
+## 178
+
+## 179
+
+## 180
