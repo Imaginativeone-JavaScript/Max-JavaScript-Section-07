@@ -307,11 +307,16 @@ section.classList.toggle("invisible");
 
 ## 167 Removing Elements
 
-## 168
+```javascript
+const list = document.querySelector("ul");
+list.parentElement.removeChild(list);
+```
 
-## 169
+## 168 Insertion & Removal Method Summary
 
-## 170
+## 169 Summary
+
+## 170 Setting Up the Practice Project
 
 ## 171
 
