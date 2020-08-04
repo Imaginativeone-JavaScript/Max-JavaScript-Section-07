@@ -100,3 +100,9 @@ console.dir(window); // Both log and dir print the same thing, the Object Proper
     - Can be created and removed via JavaScript
 
 ## 150
+
+Chrome Browser Tools:
+
+```javascript
+document.getElementById("main-title");
+```
