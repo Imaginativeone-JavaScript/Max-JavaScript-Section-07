@@ -168,7 +168,22 @@ h1.style.color = "white";
 h1.style.backgroundColor = "red"; // "background-color" probably doesn't work; check console.dir() & MDN
 ```
 
-## 153
+## 153 Attributes vs Properties
+
+- Often, attributes are mapped to properties, but not always
+
+```javascript
+// <input id="input-1" class="input-default" value="Enter-text...">
+// Attributes (placed in HTML code, on element tags)
+
+const input
+input.id // 1:1 mapping, yes (+live sync)
+input.className // !1:1 mapping ("class" vs "className")(but live sync)
+input.value // 1:1 mapping (1-way live sync, UI changes don't immediately change the property value)
+
+input.setAttribute('value', 'some other default text'); // no UI change, but attribute change
+input.value = input.getAttribute('value'); // makes the change
+```
 
 ## 154
 
